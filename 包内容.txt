@@ -1,0 +1,95 @@
+xml version=1.0 encoding=UTF-8
+ivy-module version=1.0
+    info organisation=com.99bill module=app-jec
+    configurations
+        conf name=default
+        conf name=compile
+        conf name=zip
+        conf name=test
+    configurations
+    publications
+        artifact ext=jar
+    publications
+    dependencies
+        dependency org=oracle name=ojdbc rev=1.4 conf=zip-default
+        dependency org=com.opensymphony name=sitemesh rev=2.4 conf=zip-default
+      
+        dependency org=com.sun name=activation rev=1.1 conf=zip-default
+        dependency org=org.apache name=activeio-core rev=3.1.0 conf=zip-default!--3.1.2. --
+        dependency org=org.apache name=activemq-core rev=5.1.0 conf=zip-default !--5.4.2  tibco替换 --
+       !-- dependency org=org.apache name=activemq-protobuf rev=1.1 conf=zip-default  tibco替换 --
+        dependency org=com.sun name=activation rev=1.1 conf=zip-default
+        dependency org=unknown name=aopalliance rev=1.0 conf=zip-default
+        dependency org=org.objectweb name=asm rev=3.3.1 conf=zip-default
+        dependency org=org.aspectj name=aspectjweaver rev=1.6.1 conf=zip-default !--1.6.12 --
+        dependency org=net.sf name=cglib rev=2.2.2 conf=zip-default
+        dependency org=org.apache name=commons-beanutils rev=1.8.0 conf=zip-default
+        dependency org=org.apache name=commons-codec rev=1.4 conf=zip-default
+        dependency org=org.apache name=commons-collections rev=3.2 conf=zip-default
+        dependency org=org.apache name=commons-configuration rev=1.6 conf=zip-default
+        !--dependency org=org.apache name=commons-dbcp rev=1.2 conf=zip-default !--C3P0替换 --
+        dependency org=org.apache name=commons-digester rev=2.1 conf=zip-default !--解析xml --
+        !--dependency org=org.apache name=commons-email rev=1.2 conf=zip-default 发送邮件 --
+        dependency org=org.apache name=commons-fileupload rev=1.2.2 conf=zip-default !--文件上传 --
+		dependency org=org.apache name=commons-httpclient rev=3.1 conf=zip-default 
+		dependency org=org.apache name=commons-io rev=2.1 conf=zip-default 
+		dependency org=org.apache name=commons-lang rev=2.4 conf=zip-default 
+		dependency org=org.apache name=commons-logging rev=1.1.1 conf=zip-default 
+		dependency org=org.apache name=commons-net rev=2.0 conf=zip-default  !--网络协议--
+		dependency org=org.apache name=commons-pool rev=1.2 conf=zip-default  !--对象池 --
+		dependency org=org.dom4j name=dom4j rev=1.6.1 conf=zip-default 
+		dependency org=unknown name=filters rev=2.0.235 conf=zip-default 
+		dependency org=org.visigoth name=freemarker rev=2.3.19 conf=zip-default 
+		!--dependency org=org.apache name=geronimo-j2ee-management_1.1_spec rev=1.0.1 conf=zip-default !--Tibco --
+		!--dependency org=org.apache name=geronimo-jms_1.1_spec rev=1.1.1 conf=zip-default !--Tibco --
+		dependency org=org.apache name=gson rev=2.2.1 conf=zip-default !--Json转换 --
+		!--dependency org=org.apache name=httpclient rev=4.2.3 conf=zip-default !--通讯使用--
+		!--dependency org=org.apache name=httpcore rev=4.2.2 conf=zip-default !--通讯使用--
+		!--dependency org=org.apache name=httpmime rev=4.2.3 conf=zip-default !--通讯使用--
+		!--dependency org=com.ibm.icu name=icu4j rev=4.0.1 conf=zip-default !--探测文档编码--
+		dependency org=org.codehaus name=jackson-core-asl rev=1.6.6 conf=zip-default !--Json--
+		dependency org=org.codehaus name=jackson-core-lgpl rev=1.6.6 conf=zip-default !--Json--
+		dependency org=org.codehaus name=jackson-mapper-asl rev=1.6.6 conf=zip-default !--Json--
+		dependency org=org.codehaus name=jackson-mapper-lgpl rev=1.6.6 conf=zip-default !--Json--
+		!--dependency org=unknow name=jasypt rev=1.6.6 conf=zip-default !--加密--
+		dependency org=unknow name=java-image-scaling rev=1.6.6 conf=zip-default !--图片压缩--
+		dependency org=it.sauron name=javabase64 rev=1.3.1 conf=zip-default !--Base64编码--
+		dependency org=org.apache name=jcl-over-slf4j rev=1.3.1 conf=zip-default !--lo4j2替换--
+		dependency org=javax.servlet name=log4j rev=1.2.15 conf=zip-default !--lo4j2替换--
+		dependency org=org.slf4j name=slf4j-api rev=1.6.4 conf=zip-default !--lo4j2替换--
+		dependency org=org.slf4j name=slf4j-log4j12  rev=1.2.15 conf=zip-default !--lo4j2替换--
+		dependency org=javax.servlet name=jstl rev=1.3.1 conf=zip-default !--jstl--
+		dependency org=org.apache name=standard rev=1.1.2 conf=zip-default !--jstl--
+		dependency org=com.sun name=mail rev=1.4 conf=zip-default !--邮件发送--
+		dependency org=com.ibatis name=mybatis rev=3.0.4 conf=zip-default !--公司架构--
+		dependency org=org.mybatis name=mybatis-spring rev=1.0.0 conf=zip-default !--公司架构--
+		dependency org=unknown name=org.osgi.core rev=4.1.0 conf=zip-default !--osgi可以不用--
+		dependency org=org.quartz name=quartz rev=1.5.2 conf=zip-default !--quartz可以不用--
+		dependency org=sitemesh name=sitemesh rev=3.0 conf=zip-default 
+		dependency org=org.apache name=solr-core rev=3.0 conf=zip-default  !--索引搜索--
+		dependency org=org.apache name=solr-solrj rev=4.2.0 conf=zip-default  !--索引搜索--
+		dependency org=org.apache name=xml-apis rev=1.0.b2 conf=zip-default  
+		dependency org=org.apache name=zookeeper rev=3.4.5 conf=zip-default  !--zookeeper --
+		dependency org=org.springframework name=spring-aop rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-asm rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-aspects rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-beans rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-context rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-context-support rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-expression rev=3.1.2 conf=zip-default 
+		dependency org=org.springframework name=spring-jdbc rev=3.1.2 conf=zip-default  !--jdbc --
+		dependency org=org.springframework name=spring-jms rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-orm rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-oxm rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-test rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-transaction rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-web rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-web-portlet rev=3.1.2 conf=zip-default  
+		dependency org=org.springframework name=spring-web-servlet rev=3.1.2 conf=zip-default  
+		!-- 替换包--
+		dependency org=unknown name=c3p0 rev=0.9.1.2 conf=zip-default
+	    dependency org=com.tibco name=tibjms rev=6.0.0 conf=zip-default
+		
+		
+    dependencies
+ivy-module
