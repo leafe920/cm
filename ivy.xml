@@ -27,6 +27,10 @@
 		<dependency org="com.tibco" name="tibjms" rev="6.0.1" conf="zip->default" />
 		<dependency org="io.netty" name="netty-all" rev="4.0.30.Final" conf="zip->default" />
 		<dependency org="it.sauron" name="javabase64" rev="1.3.1" conf="zip->default" />
+<<<<<<< HEAD
+=======
+		<dependency org="j2ee" name="j2ee" rev="1.4" conf="compile->default" />
+>>>>>>> branch 'master' of git@github.com:leafe920/cm.git
 		<dependency org="j2ee" name="jta" rev="1.1" conf="zip->default" />
 		<dependency org="javassist" name="javassist" rev="3.11.0.GA" conf="zip->default" />
 		<dependency org="javax.jms" name="jms" rev="6.0" conf="compile->default" />
